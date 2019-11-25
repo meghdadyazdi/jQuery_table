@@ -4,5 +4,10 @@ $(document).ready(function(){
     // $("td").addClass("underline");
     $("td").addClass("border");    
     // $("h2").removeClass(underline);
-    // $("ul").removeClass(border);    
+    // $("ul").removeClass(border);   
+     $("th").click(function(){
+     	$("tr").children().removeClass("selection")
+    	$(this).siblings().addClass("selection");
+
+  });
 });
